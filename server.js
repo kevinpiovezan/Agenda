@@ -29,7 +29,7 @@ app.use(express.urlencoded({extended: true})); // Postar formularios p/ dentro d
 app.use(express.json()); //Permite uso de JSON dentro da aplicacao
 
 //CONECTANDO AO MONGO DB
-mongoose.connect(process.env.CONNECTIONSTRING, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.CONNECTIONSTRING, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false })
     .then(() => {
         console.log('Conectei a base de dados')
         app.emit('Pronto');
