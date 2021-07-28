@@ -2,7 +2,7 @@ const path = require('path'); //Common JS
 
 module.exports = {
     mode: 'development',
-    entry: './frontend/main.js',
+    entry: '/frontend/main.js',
     output: {
         path: path.resolve(__dirname, 'public', 'assets', 'js'),
         filename: 'bundle.js'

@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const validator = require('validator')
+const validator = require('validator');
 
 const ContatoSchema = new mongoose.Schema({
     nome: {type: String, required: true},
@@ -7,6 +7,7 @@ const ContatoSchema = new mongoose.Schema({
     email: {type: String, required: false, default: ''},
     telefone: {type: String, required: false, default: ''},
     criadoEm: {type: Date, default: Date.now},
+    criadoPor: {type: String}
 });
 const ContatoModel = mongoose.model('Contato', ContatoSchema);
 
@@ -49,7 +50,7 @@ Contato.prototype.cleanUp= function() {
         sobrenome: this.body.sobrenome,
         email: this.body.email,
         telefone: this.body.telefone,
-        
+        criadoPor: this.body.user,
     }
 } 
 
@@ -68,8 +69,8 @@ Contato.buscaPorID = async function(id){
     return contato;
 };
 
-Contato.buscaContatos = async function(){
-    const contatos = await ContatoModel.find().sort({criadoEm: -1});
+Contato.buscaContatos = async function(id){
+    const contatos = await ContatoModel.find({criadoPor: id}).sort({criadoEm: -1});
     return contatos;
 };
 

@@ -10,7 +10,7 @@
                 <div class="col-lg">
                     <h4>Crie sua conta</h4>
                     <p>Se você ainda não tem conta, preencha seu formulário abaixo:</p>
-                    <form method="POST" action="/login/register">
+                    <form class="form-cadastro" method="POST" action="/login/register">
                       <input type="hidden" name="_csrf" value="<%= csrfToken %>">
                         <div class="form-group">
                           <label for="exampleInputEmail1">Seu melhor e-mail</label>
@@ -26,7 +26,7 @@
                 <div class="col-lg">
                     <h4>Faça login</h4>
                     <p>Se você já possui conta, entre com seu e-mail e senha:</p>
-                    <form action="/login/login" method="POST">
+                    <form class="form-login" action="/login/login" method="POST">
                       <input type="hidden" name="_csrf" value="<%= csrfToken %>">
                         <div class="form-group">
                           <label for="exampleInputEmail1">E-mail</label>
