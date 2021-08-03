@@ -25,7 +25,7 @@
 
 
 <br>
-You are welcome to test it on this link:
+<!-- You are welcome to test it on this link: -->
 
 ## Technologies used on this project:
 - [HTML](https://html.com)
