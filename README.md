@@ -25,7 +25,7 @@
 
 
 <br>
-You are welcome to test it on this link: http://35.199.95.76/ <br>
+You are welcome to test it on this link: https://agenda.kevinpiovezan.com.br/ <br>
 Hosted on Google Cloud Platform
 
 ## Technologies used on this project:
