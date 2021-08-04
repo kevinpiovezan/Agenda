@@ -25,7 +25,8 @@
 
 
 <br>
-<!-- You are welcome to test it on this link: -->
+You are welcome to test it on this link: http://35.199.95.76/ <br>
+Hosted on Google Cloud Platform
 
 ## Technologies used on this project:
 - [HTML](https://html.com)
@@ -33,6 +34,7 @@
 - [NODE](https://nodejs.org/en/)
 - [MONGODB](https://www.mongodb.com)
 - [BOOTSTRAP](https://getbootstrap.com)
+- [GOOGLE CLOUD PLATFORM](https://cloud.google.com)
 
 ### Author
 ---
